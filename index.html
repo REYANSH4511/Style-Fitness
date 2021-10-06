@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /*CSS Reset*/
+        body {
+            font-family: 'Baloo Paaji 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/bg.jpg');
+            color: white;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .left {
+            position: absolute;
+            top: 5px;
+            left: 18px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 116px;
+            padding-bottom: 8px;
+        }
+
+        .left img {
+            width: 86px;
+            padding: 11px;
+            padding-bottom: 5px;
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 8px;
+            font-size: 20px;
+        }
+
+        .mid {
+            display: block;
+            width: 650px;
+            margin: 16px auto;
+            /* border: 2px solid yellow; */
+        }
+
+        .right {
+            position: absolute;
+            top: 20px;
+            right: 34px;
+            /* border: 2px solid blue; */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 3px 14px;
+            /* border: 2px solid grey; */
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Baloo Paaji 2', cursive;
+        }
+
+        .btn:hover {
+            font-family: 'Baloo Paaji 2', cursive;
+            background-color: rgb(194, 184, 184);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 93px 70px;
+            padding: 10px 34px;
+            width: 22%;
+            border-radius: 30px;
+        }
+
+        .container label {
+            font-family: 'Baloo Paaji 2', cursive;
+            font-size: 18px;
+            font-style: italic;
+
+        }
+
+        .container input#name {
+            width: 270px;
+            border: 1px solid #ddd;
+            border-radius: 9px;
+            outline: 0;
+            padding: 7px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logo.jpg" alt="loading..">
+            <div>Style Fitness</div>
+        </div>
+        <!--mid box for navigation-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Expert</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join best Gym in Bhiwadi</h1>
+            <form action="noaction.html">
+                <label>Name : </label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your name">
+                <br><br>
+                <label>Your Age : </label>
+                <br>
+                <input type="number" name="age" id="name" placeholder="Enter Your Age" min="10" max="100">
+                <br><br>
+                <label>Email : </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Your valid email">
+                <br><br>
+                <label>Gender : </label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                <br><br>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
